@@ -14,6 +14,7 @@ public class ErrorViewController {
     @FXML
     private Button regresar;
 
+    @FXML
     private void RegresarInicio(ActionEvent event) throws IOException {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/actividad_veterinaria/PantallaInicio.fxml"));
