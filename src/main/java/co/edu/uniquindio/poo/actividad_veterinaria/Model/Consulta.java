@@ -2,6 +2,7 @@ package co.edu.uniquindio.poo.actividad_veterinaria.Model;
 
 public class Consulta {
 
+    private int id;
     private String fecha;
     private String hora;
     private String mascotaasig;
@@ -19,7 +20,7 @@ public class Consulta {
         this.motivo = motivo;
         this.diagnositco = diagnositco;
         this.tratamiento = tratamiento;
-
+        this.id = -1;
 
     }
 
@@ -79,10 +80,19 @@ public class Consulta {
         this.tratamiento = tratamiento;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Consulta{" +
-                "fecha='" + fecha + '\'' +
+                "id=" + id +
+                ", fecha='" + fecha + '\'' +
                 ", hora='" + hora + '\'' +
                 ", mascotaasig='" + mascotaasig + '\'' +
                 ", veterinarioasig='" + veterinarioasig + '\'' +
