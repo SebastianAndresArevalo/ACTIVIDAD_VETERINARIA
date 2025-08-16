@@ -1,6 +1,7 @@
 module co.edu.uniquindio.poo.actividad_veterinaria {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens co.edu.uniquindio.poo.actividad_veterinaria to javafx.fxml;

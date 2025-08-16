@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.AgendarConsultaViewController">
    <children>
       <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor introduzca los siguientes datos de la mascota:" underline="true">
          <font>
@@ -47,7 +47,8 @@
          </font>
       </Text>
       <TextField layoutX="14.0" layoutY="287.0" prefHeight="25.0" prefWidth="234.0" />
-      <Button layoutX="306.0" layoutY="342.0" mnemonicParsing="false" text="ACEPTAR" />
+      <Button id="aceptar" layoutX="306.0" layoutY="342.0" mnemonicParsing="false" text="ACEPTAR" >
+      </Button>
       <Text layoutX="412.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recuerde llenar todos los espacios para poder agendar la cita" textAlignment="JUSTIFY" wrappingWidth="142.984375">
          <font>
             <Font name="Times New Roman" size="13.0" />
@@ -56,7 +57,12 @@
             <InnerShadow />
          </effect>
       </Text>
-      <Button layoutX="222.0" layoutY="342.0" mnemonicParsing="false" text="REGRESAR" />
+      <Button fx:id="regresar"
+              layoutX="222.0" layoutY="342.0"
+              mnemonicParsing="false"
+              text="REGRESAR"
+              onAction="#OnIrASegunda"/>
+
       <Text layoutX="291.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FECHA:">
          <font>
             <Font name="Times New Roman" size="17.0" />
