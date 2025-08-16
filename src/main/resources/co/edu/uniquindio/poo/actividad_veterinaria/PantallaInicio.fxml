@@ -16,26 +16,17 @@
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="ConsulCitas" layoutX="55.0" layoutY="275.0" mnemonicParsing="false" onAction="#ConsultarCitas" text="Consultar citas pendientes">
+      <Button fx:id="ConsulCitas" layoutX="55.0" layoutY="275.0" mnemonicParsing="false" onAction="#ConsultarCitas" text="Consultar historial clinico">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="RegVeterinario"
-              layoutX="55.0"
-              layoutY="319.0"
-              mnemonicParsing="false"
-              onAction="#RegistrarVeterinario"
-              prefHeight="31.0"
-              prefWidth="190.0"
-              text="Registrar Veterinario">
+      <Button fx:id="RegVeterinario" layoutX="55.0" layoutY="319.0" mnemonicParsing="false" onAction="#RegistrarVeterinario" prefHeight="31.0" prefWidth="190.0" text="Registrar Veterinario">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Button>
-      <Text layoutX="120.0"
-            layoutY="80.0"
-            strokeType="OUTSIDE" strokeWidth="0.0" text="¡BIENVENIDO!">
+      <Text layoutX="120.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡BIENVENIDO!">
          <font>
             <Font name="Comic Sans MS Italic" size="50.0" />
          </font>
@@ -45,14 +36,7 @@
             <Font name="Times New Roman" size="18.0" />
          </font>
       </Text>
-      <Button fx:id="CitadelDia"
-              layoutX="55.0"
-              layoutY="234.0"
-              mnemonicParsing="false"
-              prefHeight="31.0"
-              prefWidth="190.0"
-              text="Consultar historial clinico"
-              onAction="#ConsultarCitasDelDia">
+      <Button fx:id="CitadelDia" layoutX="55.0" layoutY="234.0" mnemonicParsing="false" onAction="#ConsultarCitasDelDia" prefHeight="31.0" prefWidth="190.0" text="Consultar citas pendientes">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>

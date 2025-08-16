@@ -11,9 +11,16 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "co.edu.uniquindio.poo.actividad_veterinaria.ViewController.BusquedaFechaViewController">
    <children>
       <Text layoutX="76.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INTRODUZCA LA FECHA EN LA QUE DESEA CONSULTAR LAS CITAS" />
-      <TextField layoutX="179.0" layoutY="46.0" />
+      <TextField fx:id="fecha"
+                 layoutX="179.0"
+                 layoutY="46.0" />
       <Separator layoutX="3.0" layoutY="37.0" prefHeight="0.0" prefWidth="497.0" />
-      <Button layoutX="262.0" layoutY="78.0" mnemonicParsing="false" text="ACEPTAR" />
+      <Button fx:id="aceptar"
+              layoutX="262.0"
+              layoutY="78.0"
+              mnemonicParsing="false"
+              text="ACEPTAR"
+              onAction = "#DatosCorrectos"/>
       <Button fx:id="regresar"
               layoutX="179.0"
               layoutY="78.0"

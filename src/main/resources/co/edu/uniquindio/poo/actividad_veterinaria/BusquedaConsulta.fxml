@@ -11,13 +11,16 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.BusquedaConsultaViewController">
    <children>
       <Text layoutX="88.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INTRODUZCA EL ID DE LA CONSULTA QUE DESEA VISUALIZAR" />
-      <TextField layoutX="179.0" layoutY="46.0" />
+      <TextField fx:id="IDConsulta"
+                 layoutX="179.0"
+                 layoutY="46.0" />
       <Separator layoutX="3.0" layoutY="37.0" prefHeight="0.0" prefWidth="497.0" />
-      <Button id="aceptar"
+      <Button fx:id="aceptar"
               layoutX="262.0"
               layoutY="78.0"
               mnemonicParsing="false"
-              text="ACEPTAR"/>
+              text="ACEPTAR"
+              onAction = "#DatoCorrecto"/>
       <Button fx:id="regresar"
               layoutX="179.0"
               layoutY="78.0"
