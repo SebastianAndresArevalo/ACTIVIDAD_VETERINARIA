@@ -101,4 +101,7 @@ public class Consulta {
                 ", tratamiento='" + tratamiento + '\'' +
                 '}';
     }
+
+
+
 }

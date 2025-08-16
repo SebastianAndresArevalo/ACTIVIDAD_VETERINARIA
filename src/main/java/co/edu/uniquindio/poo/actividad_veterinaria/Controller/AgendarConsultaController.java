@@ -2,7 +2,7 @@ package co.edu.uniquindio.poo.actividad_veterinaria.Controller;
 
 import co.edu.uniquindio.poo.actividad_veterinaria.Model.Agenda;
 
-class AgendarConsultaController {
+public class AgendarConsultaController {
 
     private final Agenda agenda;
 
