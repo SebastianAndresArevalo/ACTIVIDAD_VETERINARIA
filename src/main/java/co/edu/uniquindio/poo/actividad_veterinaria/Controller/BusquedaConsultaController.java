@@ -20,4 +20,8 @@ public class BusquedaConsultaController {
 
     }
 
+    public Consulta buscarConsultaPorId(String id) {
+        return veterinaria.buscarConsulta(id);
+    }
+
 }

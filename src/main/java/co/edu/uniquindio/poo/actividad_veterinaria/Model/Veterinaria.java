@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 public class Veterinaria {
 
+    private static Veterinaria instance;
     private String nombre;
     private String direccion;
     private ArrayList<Consulta> listaConsultas;
@@ -17,6 +18,13 @@ public class Veterinaria {
         this.listaVeterinarios = new ArrayList<>();
         this.listaMascotas = new ArrayList<>();
 
+    }
+
+    public static Veterinaria getInstance() {
+        if (instance == null) {
+            instance = new Veterinaria("papu", "Calle12N");
+        }
+        return instance;
     }
 
     public ArrayList<Consulta> getListaConsultas(int id) {
@@ -51,6 +59,10 @@ public class Veterinaria {
         this.direccion = direccion;
     }
 
+    public ArrayList<Consulta> getListaConsultas() {
+        return listaConsultas;
+    }
+
     @Override
     public String toString() {
         return "Veterinaria{" +
@@ -59,18 +71,23 @@ public class Veterinaria {
                 '}';
     }
 
-    public Consulta buscarConsultaPorId(int id) {
+    public String registrarConsulta(Consulta nuevaConsulta) {
+        listaConsultas.add(nuevaConsulta);
+        return "Consulta agendada correctamente";
+    }
+
+    public Consulta buscarConsulta(String id) {
         for (Consulta consulta : listaConsultas) {
-            if (consulta.getId() == id) {
+            if (consulta.getFecha().equals(id)) {
                 return consulta;
             }
         }
-        return null; // no encontrada
+        return null;
     }
 
-    public Consulta buscarConsulta(String fecha) {
+    public Consulta buscarConsultaporFecha(String Fecha) {
         for (Consulta consulta : listaConsultas) {
-            if (consulta.getFecha().equals(fecha)) {
+            if (consulta.getFecha().equals(Fecha)) {
                 return consulta;
             }
         }

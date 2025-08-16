@@ -2,7 +2,7 @@ package co.edu.uniquindio.poo.actividad_veterinaria.Model;
 
 public class Consulta {
 
-    private int id;
+    private String id;
     private String fecha;
     private String hora;
     private String mascotaasig;
@@ -11,16 +11,16 @@ public class Consulta {
     private String diagnositco;
     private String tratamiento;
 
-    public Consulta(String fecha, String hora, String mascotaasig, String veterinarioasig, String motivo, String diagnositco, String tratamiento) {
+    public Consulta(String fecha, String hora, String mascotaasig, String veterinarioasig, String motivo, String diagnostico, String tratamiento, String id) {
 
         this.fecha = fecha;
         this.hora = hora;
         this.mascotaasig = mascotaasig;
         this.veterinarioasig = veterinarioasig;
         this.motivo = motivo;
-        this.diagnositco = diagnositco;
+        this.diagnositco = diagnostico;
         this.tratamiento = tratamiento;
-        this.id = -1;
+        this.id = id;
 
     }
 
@@ -80,11 +80,11 @@ public class Consulta {
         this.tratamiento = tratamiento;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

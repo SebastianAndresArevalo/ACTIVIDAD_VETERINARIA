@@ -1,5 +1,8 @@
 package co.edu.uniquindio.poo.actividad_veterinaria.ViewController;
 
+import co.edu.uniquindio.poo.actividad_veterinaria.Controller.BusquedaFechaController;
+import co.edu.uniquindio.poo.actividad_veterinaria.Model.Consulta;
+import co.edu.uniquindio.poo.actividad_veterinaria.Model.Veterinaria;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,13 +16,10 @@ import java.io.IOException;
 public class BusquedaFechaViewController {
 
     @FXML
-    private Button regresar;
-
-    @FXML
-    private Button aceptar;
-
-    @FXML
     private TextField fecha;
+
+    private Veterinaria veterinaria = Veterinaria.getInstance();
+    BusquedaFechaController Controller = new BusquedaFechaController (veterinaria);
 
     @FXML
     private void RegresarInicio(ActionEvent event) throws IOException {
@@ -39,27 +39,22 @@ public class BusquedaFechaViewController {
 
         String FechaIngresada = fecha.getText();
 
-        if (FechaIngresada.equals("213")) {
+        Consulta consulta = Controller.buscarConsultaPorFecha(FechaIngresada);
 
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/actividad_veterinaria/CitasDelDia.fxml"));
+        if (consulta != null) {
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/actividad_veterinaria/RegistroConsulta.fxml"));
             Scene scene = new Scene(loader.load());
-
             Stage stage = (Stage) ((Button)event.getSource()).getScene().getWindow();
-
             stage.setScene(scene);
             stage.show();
-
-
-        }else {
+        } else {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/actividad_veterinaria/Error.fxml"));
             Scene scene = new Scene(loader.load());
-
             Stage stage = (Stage) ((Button)event.getSource()).getScene().getWindow();
-
             stage.setScene(scene);
             stage.show();
-
         }
 
     }

@@ -17,7 +17,7 @@
             <Font name="Times New Roman" size="22.0" />
          </font>
       </Text>
-      <TextField layoutX="14.0" layoutY="115.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="nombre" layoutX="14.0" layoutY="115.0" prefHeight="25.0" prefWidth="234.0" />
       <Text layoutX="14.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE:">
          <font>
             <Font name="Times New Roman" size="17.0" />
@@ -28,13 +28,13 @@
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
-      <TextField layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="especialidad" layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="234.0" />
       <Text layoutX="17.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE LICENCIA:">
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
-      <TextField layoutX="14.0" layoutY="260.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="numerodelicencia" layoutX="14.0" layoutY="260.0" prefHeight="25.0" prefWidth="234.0" />
       <Button id="aceptar" layoutX="306.0" layoutY="342.0" mnemonicParsing="false" text="ACEPTAR" />
       <Text layoutX="412.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recuerde llenar todos los espacios para poder registrar al veterinario" textAlignment="JUSTIFY" wrappingWidth="142.984375">
          <font>

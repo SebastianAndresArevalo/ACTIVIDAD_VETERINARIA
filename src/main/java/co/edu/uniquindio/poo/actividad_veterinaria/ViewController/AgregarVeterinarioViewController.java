@@ -1,10 +1,13 @@
 package co.edu.uniquindio.poo.actividad_veterinaria.ViewController;
 
+import co.edu.uniquindio.poo.actividad_veterinaria.Controller.AgendarConsultaController;
+import co.edu.uniquindio.poo.actividad_veterinaria.Model.Veterinaria;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -12,10 +15,16 @@ import java.io.IOException;
 public class AgregarVeterinarioViewController {
 
     @FXML
-    private Button aceptar;
+    private TextField nombre;
 
     @FXML
-    private Button regresar;
+    private TextField numerodelicencia;
+
+    @FXML
+    private TextField especialidad;
+
+    private Veterinaria veterinaria = Veterinaria.getInstance();
+    private AgendarConsultaController controller = new AgendarConsultaController(veterinaria);
 
     @FXML
     private void RegresarInicio (ActionEvent event) throws IOException {
@@ -29,6 +38,9 @@ public class AgregarVeterinarioViewController {
         stage.show();
 
     }
+
+
+
 
 
 
