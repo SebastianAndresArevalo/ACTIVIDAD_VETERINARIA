@@ -6,10 +6,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-import java.awt.event.ActionEvent;
+import javafx.event.ActionEvent;
 import java.io.IOException;
 
-public class AgendarConsultaViewController {
+public class    AgendarConsultaViewController {
 
     @FXML
     private Button aceptar;
@@ -20,10 +20,13 @@ public class AgendarConsultaViewController {
     @FXML
     private void OnIrASegunda(ActionEvent event) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("PantallaInicio.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/actividad_veterinaria/PantallaInicio.fxml"));
         Scene scene = new Scene(loader.load());
 
-        Stage stage = new Stage();
+        Stage stage = (Stage) ((Button)event.getSource()).getScene().getWindow();
+
+        stage.setScene(scene);
+        stage.show();
 
 
     }

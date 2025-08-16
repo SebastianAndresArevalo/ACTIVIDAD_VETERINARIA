@@ -9,24 +9,33 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.PantallaInicioViewController">
    <children>
-      <Button id="123" layoutX="55.0" layoutY="192.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="190.0" text="Agendar Consulta">
+      <Button fx:id="AgConsultar" layoutX="55.0" layoutY="192.0" mnemonicParsing="false" onAction="#AgendarConsulta" prefHeight="31.0" prefWidth="190.0" text="Agendar Consulta">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Button>
-      <Button id="123" layoutX="55.0" layoutY="275.0" mnemonicParsing="false" text="Consultar citas pendientes">
+      <Button fx:id="ConsulCitas" layoutX="55.0" layoutY="275.0" mnemonicParsing="false" onAction="#ConsultarCitas" text="Consultar citas pendientes">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Button>
-      <Button id="123" layoutX="55.0" layoutY="319.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="190.0" text="Consultar citas asignadas">
+      <Button fx:id="RegVeterinario"
+              layoutX="55.0"
+              layoutY="319.0"
+              mnemonicParsing="false"
+              onAction="#RegistrarVeterinario"
+              prefHeight="31.0"
+              prefWidth="190.0"
+              text="Registrar Veterinario">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Button>
-      <Text layoutX="120.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡BIENVENIDO!">
+      <Text layoutX="120.0"
+            layoutY="80.0"
+            strokeType="OUTSIDE" strokeWidth="0.0" text="¡BIENVENIDO!">
          <font>
             <Font name="Comic Sans MS Italic" size="50.0" />
          </font>
@@ -36,7 +45,14 @@
             <Font name="Times New Roman" size="18.0" />
          </font>
       </Text>
-      <Button id="123" layoutX="55.0" layoutY="234.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="190.0" text="Consultar historial clinico">
+      <Button fx:id="CitadelDia"
+              layoutX="55.0"
+              layoutY="234.0"
+              mnemonicParsing="false"
+              prefHeight="31.0"
+              prefWidth="190.0"
+              text="Consultar historial clinico"
+              onAction="#ConsultarCitasDelDia">
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
