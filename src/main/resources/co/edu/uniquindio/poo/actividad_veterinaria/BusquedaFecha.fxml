@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="76.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INTRODUZCA LA FECHA EN LA QUE DESEA CONSULTAR LAS CITAS" />
+      <TextField layoutX="179.0" layoutY="46.0" />
+      <Separator layoutX="3.0" layoutY="37.0" prefHeight="0.0" prefWidth="497.0" />
+      <Button layoutX="262.0" layoutY="78.0" mnemonicParsing="false" text="ACEPTAR" />
+      <Button layoutX="179.0" layoutY="78.0" mnemonicParsing="false" text="REGRESAR" />
+      <Text layoutX="392.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota: Introduzca una fecha valida para avanzar" wrappingWidth="101.576171875">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
