@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.List;
 
 public class BusquedaFechaViewController {
 
@@ -36,27 +37,27 @@ public class BusquedaFechaViewController {
 
     @FXML
     private void DatosCorrectos(ActionEvent event) throws IOException {
-
         String FechaIngresada = fecha.getText();
 
-        Consulta consulta = Controller.buscarConsultaPorFecha(FechaIngresada);
+        List<Consulta> consultas = Controller.buscarConsultasPorFecha(FechaIngresada);
 
-        if (consulta != null) {
-
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/actividad_veterinaria/RegistroConsulta.fxml"));
+        if (!consultas.isEmpty()) {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/actividad_veterinaria/CitasDelDia.fxml"));
             Scene scene = new Scene(loader.load());
+
+            CitasDelDiaViewController citasController = loader.getController();
+            citasController.setConsultas(consultas);
+
             Stage stage = (Stage) ((Button)event.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } else {
-
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/co/edu/uniquindio/poo/actividad_veterinaria/Error.fxml"));
             Scene scene = new Scene(loader.load());
             Stage stage = (Stage) ((Button)event.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         }
-
     }
 
 }

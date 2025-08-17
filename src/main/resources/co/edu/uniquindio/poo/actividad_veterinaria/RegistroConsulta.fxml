@@ -88,6 +88,17 @@
             <Image url="@../../../../../images/gatitos.png" />
          </image>
       </ImageView>
-      <Button fx:id="regresar" layoutX="265.0" layoutY="356.0" mnemonicParsing="false" onAction="#RegresarInicio" text="REGRESAR" />
+      <Button fx:id="regresar" layoutX="298.0" layoutY="356.0" mnemonicParsing="false" onAction="#RegresarInicio" text="REGRESAR" />
+      <Button fx:id="generar" layoutX="215.0" layoutY="356.0" mnemonicParsing="false" onAction="#MostrarConsultas" text="GENERAR" />
+      <Label fx:id="id" id="hora1" layoutX="459.0" layoutY="74.0" text="Cargando...">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="459.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Text>
    </children>
 </Pane>

@@ -1,5 +1,6 @@
 package co.edu.uniquindio.poo.actividad_veterinaria.Model;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Veterinaria {
 
@@ -9,6 +10,7 @@ public class Veterinaria {
     private ArrayList<Consulta> listaConsultas;
     private ArrayList<Veterinario> listaVeterinarios;
     private ArrayList<Mascota> listaMascotas;
+    private String ultimaFechaBuscada;
 
     public Veterinaria(String nombre, String direccion) {
 
@@ -18,6 +20,14 @@ public class Veterinaria {
         this.listaVeterinarios = new ArrayList<>();
         this.listaMascotas = new ArrayList<>();
 
+    }
+
+    public String getUltimaFechaBuscada() {
+        return ultimaFechaBuscada;
+    }
+
+    public void setUltimaFechaBuscada(String ultimaFechaBuscada) {
+        this.ultimaFechaBuscada = ultimaFechaBuscada;
     }
 
     public static Veterinaria getInstance() {
@@ -78,18 +88,19 @@ public class Veterinaria {
         return "Consulta agendada correctamente";
     }
 
-    public Consulta buscarConsulta(String id) {
-        for (Consulta consulta : listaConsultas) {
-            if (consulta.getFecha().equals(id)) {
-                return consulta;
+    public List<Consulta> buscarConsultasPorFecha(String fecha) {
+        List<Consulta> resultado = new ArrayList<>();
+        for (Consulta c : listaConsultas) {
+            if (c.getFecha().equals(fecha)) {
+                resultado.add(c);
             }
         }
-        return null;
+        return resultado;
     }
 
-    public Consulta buscarConsultaporFecha(String Fecha) {
+    public Consulta buscarConsulta(String Fecha) {
         for (Consulta consulta : listaConsultas) {
-            if (consulta.getFecha().equals(Fecha)) {
+            if (consulta.getId().equals(Fecha)) {
                 return consulta;
             }
         }

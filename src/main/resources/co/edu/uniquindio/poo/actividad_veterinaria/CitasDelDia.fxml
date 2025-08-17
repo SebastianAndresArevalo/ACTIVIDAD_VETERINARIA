@@ -16,5 +16,6 @@
          </font>
       </Text>
       <Button fx:id="regresar" layoutX="264.0" layoutY="361.0" mnemonicParsing="false" onAction="#RegresarInicio" text="REGRESAR" />
+
    </children>
 </Pane>

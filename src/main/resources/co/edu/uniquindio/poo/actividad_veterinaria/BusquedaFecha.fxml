@@ -8,25 +8,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller = "co.edu.uniquindio.poo.actividad_veterinaria.ViewController.BusquedaFechaViewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.BusquedaFechaViewController">
    <children>
-      <Text layoutX="76.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INTRODUZCA LA FECHA EN LA QUE DESEA CONSULTAR LAS CITAS" />
-      <TextField fx:id="fecha"
-                 layoutX="179.0"
-                 layoutY="46.0" />
+      <Text layoutX="38.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INTRODUZCA LA FECHA EN LA QUE DESEA CONSULTAR LAS CITA DD/MM/AAAA" />
+      <TextField fx:id="fecha" layoutX="179.0" layoutY="46.0" />
       <Separator layoutX="3.0" layoutY="37.0" prefHeight="0.0" prefWidth="497.0" />
-      <Button fx:id="aceptar"
-              layoutX="262.0"
-              layoutY="78.0"
-              mnemonicParsing="false"
-              text="ACEPTAR"
-              onAction = "#DatosCorrectos"/>
-      <Button fx:id="regresar"
-              layoutX="179.0"
-              layoutY="78.0"
-              mnemonicParsing="false"
-              text="REGRESAR"
-              onAction="#RegresarInicio"/>
+      <Button fx:id="aceptar" layoutX="262.0" layoutY="78.0" mnemonicParsing="false" onAction="#DatosCorrectos" text="ACEPTAR" />
+      <Button fx:id="regresar" layoutX="179.0" layoutY="78.0" mnemonicParsing="false" onAction="#RegresarInicio" text="REGRESAR" />
       <Text layoutX="392.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota: Introduzca una fecha valida para avanzar" wrappingWidth="101.576171875">
          <font>
             <Font size="9.0" />

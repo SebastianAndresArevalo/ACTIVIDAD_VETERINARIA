@@ -1,19 +1,21 @@
-package co.edu.uniquindio.poo.actividad_veterinaria.Controller;
+    package co.edu.uniquindio.poo.actividad_veterinaria.Controller;
 
-import co.edu.uniquindio.poo.actividad_veterinaria.Model.Consulta;
-import co.edu.uniquindio.poo.actividad_veterinaria.Model.Veterinaria;
+    import co.edu.uniquindio.poo.actividad_veterinaria.Model.Consulta;
+    import co.edu.uniquindio.poo.actividad_veterinaria.Model.Veterinaria;
 
-public class BusquedaFechaController {
+    import java.util.List;
 
-    private final Veterinaria veterinaria;
+    public class BusquedaFechaController {
+
+        private final Veterinaria veterinaria;
 
 
-    public BusquedaFechaController(Veterinaria veterinaria) {
-        this.veterinaria = veterinaria;
+        public BusquedaFechaController(Veterinaria veterinaria) {
+            this.veterinaria = veterinaria;
+        }
+
+        public List<Consulta> buscarConsultasPorFecha(String fecha){
+            return veterinaria.buscarConsultasPorFecha(fecha);
+        }
+
     }
-
-    public Consulta buscarConsultaPorFecha(String fecha){
-
-        return veterinaria.buscarConsultaporFecha(fecha);
-    }
-}

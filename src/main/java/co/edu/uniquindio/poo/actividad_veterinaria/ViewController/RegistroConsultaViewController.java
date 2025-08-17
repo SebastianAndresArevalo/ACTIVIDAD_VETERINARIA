@@ -37,7 +37,7 @@ public class RegistroConsultaViewController {
     private Label tratamiento;
 
     @FXML
-    private Label ID;
+    private Label id;
 
     private Veterinaria veterinaria = Veterinaria.getInstance();
     private RegistroConsultaController controller = new RegistroConsultaController(veterinaria);
@@ -58,28 +58,31 @@ public class RegistroConsultaViewController {
 
     @FXML
     private void MostrarConsultas(ActionEvent event) throws IOException {
+        // Tomamos la última consulta registrada en Veterinaria
+        if (!veterinaria.getListaConsultas().isEmpty()) {
+            Consulta ultimaConsulta = veterinaria.getListaConsultas()
+                    .get(veterinaria.getListaConsultas().size() - 1);
 
-        Consulta nuevaConsulta = new Consulta(
-                fecha.getText(),
-                hora.getText(),
-                mascotaasig.getText(),
-                veterinarioasig.getText(),
-                motivo.getText(),
-                diagnostico.getText(),
-                tratamiento.getText(),
-                ID.getText()
-        );
-
-        controller.MostrarConsultas(nuevaConsulta);
-
-        fecha.setText(nuevaConsulta.getFecha());
-        hora.setText(nuevaConsulta.getHora());
-        mascotaasig.setText(nuevaConsulta.getMascotaasig());
-        veterinarioasig.setText(nuevaConsulta.getVeterinarioasig());
-        motivo.setText(nuevaConsulta.getMotivo());
-        tratamiento.setText(nuevaConsulta.getTratamiento());
-        diagnostico.setText(nuevaConsulta.getDiagnositco());
-
+            // Mostramos los datos en los labels
+            fecha.setText(ultimaConsulta.getFecha());
+            hora.setText(ultimaConsulta.getHora());
+            mascotaasig.setText(ultimaConsulta.getMascotaasig());
+            veterinarioasig.setText(ultimaConsulta.getVeterinarioasig());
+            motivo.setText(ultimaConsulta.getMotivo());
+            diagnostico.setText(ultimaConsulta.getDiagnositco());
+            tratamiento.setText(ultimaConsulta.getTratamiento());
+            id.setText(ultimaConsulta.getId());
+        } else {
+            // Por si no hay ninguna consulta registrada
+            fecha.setText("Sin datos");
+            hora.setText("Sin datos");
+            mascotaasig.setText("Sin datos");
+            veterinarioasig.setText("Sin datos");
+            motivo.setText("Sin datos");
+            diagnostico.setText("Sin datos");
+            tratamiento.setText("Sin datos");
+            id.setText("Sin datos");
+        }
     }
 
 
