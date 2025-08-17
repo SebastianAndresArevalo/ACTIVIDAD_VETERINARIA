@@ -39,6 +39,8 @@ public class Veterinaria {
         this.listaVeterinarios = listaVeterinarios;
     }
 
+
+
     public void setListaMascotas(ArrayList<Mascota> listaMascotas) {
         this.listaMascotas = listaMascotas;
     }

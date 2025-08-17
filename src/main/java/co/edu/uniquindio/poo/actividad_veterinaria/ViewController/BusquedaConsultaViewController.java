@@ -16,12 +16,6 @@ import java.io.IOException;
 public class BusquedaConsultaViewController {
 
     @FXML
-    private Button regresar;
-
-    @FXML
-    private Button aceptar;
-
-    @FXML
     private TextField IDConsulta;
 
     private Veterinaria veterinaria = Veterinaria.getInstance();

@@ -10,7 +10,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.RegistroConsultaViewController">
    <children>
-      <Label layoutX="37.0" layoutY="74.0" text="Cargando...">
+      <Label fx:id="fecha" layoutX="37.0" layoutY="74.0" text="Cargando...">
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -25,7 +25,7 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
-      <Label layoutX="316.0" layoutY="74.0" text="Cargando...">
+      <Label fx:id="hora" layoutX="316.0" layoutY="74.0" text="Cargando...">
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -35,12 +35,12 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
-      <Label layoutX="37.0" layoutY="163.0" text="Cargando...">
+      <Label fx:id="mascotaasig" layoutX="37.0" layoutY="163.0" text="Cargando...">
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="316.0" layoutY="163.0" text="Cargando...">
+      <Label fx:id="veterinarioasig" layoutX="316.0" layoutY="163.0" text="Cargando...">
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -50,7 +50,7 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
-      <Label layoutX="37.0" layoutY="245.0" text="Cargando...">
+      <Label fx:id="motivo" layoutX="37.0" layoutY="245.0" text="Cargando...">
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -60,7 +60,7 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
-      <Label layoutX="316.0" layoutY="245.0" text="Cargando...">
+      <Label fx:id="diagnostico" layoutX="316.0" layoutY="245.0" text="Cargando...">
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -70,7 +70,7 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
-      <Label layoutX="35.0" layoutY="342.0" text="Cargando...">
+      <Label fx:id="tratamiento" layoutX="35.0" layoutY="342.0" text="Cargando...">
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -88,11 +88,6 @@
             <Image url="@../../../../../images/gatitos.png" />
          </image>
       </ImageView>
-      <Button fx:id="regresar"
-              layoutX="265.0"
-              layoutY="356.0"
-              mnemonicParsing="false"
-              text="REGRESAR"
-              onAction ="#RegresarInicio"/>
+      <Button fx:id="regresar" layoutX="265.0" layoutY="356.0" mnemonicParsing="false" onAction="#RegresarInicio" text="REGRESAR" />
    </children>
 </Pane>
