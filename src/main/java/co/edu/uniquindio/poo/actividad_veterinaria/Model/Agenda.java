@@ -24,4 +24,7 @@ public class Agenda {
                 "disponibilidad=" + disponibilidad +
                 '}';
     }
+
+
+
 }

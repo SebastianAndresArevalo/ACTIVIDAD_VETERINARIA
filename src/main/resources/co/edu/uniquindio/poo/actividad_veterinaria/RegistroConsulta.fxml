@@ -8,9 +8,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="37.0" layoutY="74.0" text="Cargando...">
+=======
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.RegistroConsultaViewController">
+   <children>
+      <Label fx:id="fecha" layoutX="37.0" layoutY="74.0" text="Cargando...">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -25,7 +31,11 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Label layoutX="316.0" layoutY="74.0" text="Cargando...">
+=======
+      <Label fx:id="hora" layoutX="316.0" layoutY="74.0" text="Cargando...">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -35,12 +45,20 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Label layoutX="37.0" layoutY="163.0" text="Cargando...">
+=======
+      <Label fx:id="mascotaasig" layoutX="37.0" layoutY="163.0" text="Cargando...">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Label>
+<<<<<<< HEAD
       <Label layoutX="316.0" layoutY="163.0" text="Cargando...">
+=======
+      <Label fx:id="veterinarioasig" layoutX="316.0" layoutY="163.0" text="Cargando...">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -50,7 +68,11 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Label layoutX="37.0" layoutY="245.0" text="Cargando...">
+=======
+      <Label fx:id="motivo" layoutX="37.0" layoutY="245.0" text="Cargando...">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -60,7 +82,11 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Label layoutX="316.0" layoutY="245.0" text="Cargando...">
+=======
+      <Label fx:id="diagnostico" layoutX="316.0" layoutY="245.0" text="Cargando...">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -70,7 +96,11 @@
             <Font name="Times New Roman" size="12.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Label layoutX="35.0" layoutY="342.0" text="Cargando...">
+=======
+      <Label fx:id="tratamiento" layoutX="35.0" layoutY="342.0" text="Cargando...">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="12.0" />
          </font>
@@ -85,9 +115,27 @@
       <Separator layoutX="1.0" layoutY="285.0" prefHeight="3.0" prefWidth="600.0" />
       <ImageView fitHeight="75.0" fitWidth="270.0" layoutX="391.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
          <image>
+<<<<<<< HEAD
             <Image url="@../../../../../images/img.png" />
          </image>
       </ImageView>
       <Button layoutX="265.0" layoutY="356.0" mnemonicParsing="false" text="REGRESAR" />
+=======
+            <Image url="@../../../../../images/gatitos.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="regresar" layoutX="298.0" layoutY="356.0" mnemonicParsing="false" onAction="#RegresarInicio" text="REGRESAR" />
+      <Button fx:id="generar" layoutX="215.0" layoutY="356.0" mnemonicParsing="false" onAction="#MostrarConsultas" text="GENERAR" />
+      <Label fx:id="id" id="hora1" layoutX="459.0" layoutY="74.0" text="Cargando...">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="459.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Text>
+>>>>>>> dev_arevalo
    </children>
 </Pane>

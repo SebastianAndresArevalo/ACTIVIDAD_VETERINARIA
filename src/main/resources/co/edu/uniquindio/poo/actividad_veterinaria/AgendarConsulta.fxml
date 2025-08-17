@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.image.*?>
@@ -11,23 +12,43 @@
 <?import javafx.scene.layout.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+=======
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.AgendarConsultaViewController">
+>>>>>>> dev_arevalo
    <children>
       <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor introduzca los siguientes datos de la mascota:" underline="true">
          <font>
             <Font name="Times New Roman" size="22.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="14.0" layoutY="82.0" prefHeight="25.0" prefWidth="234.0" />
       <Text layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE:">
+=======
+      <Text layoutX="14.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MASCOTA:">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Text layoutX="14.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESPECIE:">
+=======
+      <TextField fx:id="nombremascota" layoutX="14.0" layoutY="82.0" prefHeight="25.0" prefWidth="234.0" />
+      <Text layoutX="14.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MOTIVO:">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="14.0" layoutY="133.0" prefHeight="25.0" prefWidth="234.0" />
       <Text layoutX="14.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RAZA:">
          <font>
@@ -49,6 +70,17 @@
       <TextField layoutX="14.0" layoutY="287.0" prefHeight="25.0" prefWidth="234.0" />
       <Button layoutX="306.0" layoutY="342.0" mnemonicParsing="false" text="ACEPTAR" />
       <Text layoutX="412.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recuerde llenar todos los espacios para poder agendar la cita" textAlignment="JUSTIFY" wrappingWidth="142.984375">
+=======
+      <TextField fx:id="motivo" layoutX="14.0" layoutY="131.0" prefHeight="25.0" prefWidth="234.0" />
+      <Button fx:id="aceptar"
+              layoutX="156.0"
+              layoutY="342.0"
+              mnemonicParsing="false"
+              text="ACEPTAR"
+              onAction="#guardarConsulta">
+      </Button>
+      <Text layoutX="66.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recuerde llenar todos los espacios para poder agendar la cita" textAlignment="JUSTIFY" wrappingWidth="142.984375">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="13.0" />
          </font>
@@ -56,42 +88,80 @@
             <InnerShadow />
          </effect>
       </Text>
+<<<<<<< HEAD
       <Button layoutX="222.0" layoutY="342.0" mnemonicParsing="false" text="REGRESAR" />
+=======
+      <Button fx:id="regresar" layoutX="65.0" layoutY="342.0" mnemonicParsing="false" onAction="#OnIrASegunda" text="REGRESAR" />
+
+>>>>>>> dev_arevalo
       <Text layoutX="291.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FECHA:">
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="291.0" layoutY="82.0" prefHeight="25.0" prefWidth="95.0" />
       <TextField layoutX="423.0" layoutY="80.0" prefHeight="25.0" prefWidth="95.0" />
+=======
+      <TextField fx:id="fecha" layoutX="291.0" layoutY="82.0" prefHeight="25.0" prefWidth="95.0" />
+      <TextField fx:id="hora" layoutX="423.0" layoutY="80.0" prefHeight="25.0" prefWidth="95.0" />
+>>>>>>> dev_arevalo
       <Text layoutX="423.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HORA:">
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Text layoutX="291.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VETERINARIO:">
+=======
+      <Text layoutX="14.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VETERINARIO:">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="291.0" layoutY="143.0" prefHeight="25.0" prefWidth="234.0" />
       <Text layoutX="291.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIAGNOSTICO:">
+=======
+      <TextField fx:id="veterinario" layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="234.0" />
+      <Text layoutX="294.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIAGNOSTICO:">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="291.0" layoutY="195.0" prefHeight="25.0" prefWidth="234.0" />
       <Text layoutX="291.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRATAMIENTO:">
+=======
+      <TextField fx:id="diagnostico" layoutX="291.0" layoutY="131.0" prefHeight="25.0" prefWidth="234.0" />
+      <Text layoutX="290.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRATAMIENTO:">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="291.0" layoutY="246.0" prefHeight="25.0" prefWidth="234.0" />
       <TextField layoutX="291.0" layoutY="297.0" prefHeight="25.0" prefWidth="234.0" />
       <Text layoutX="291.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+=======
+      <TextField fx:id="tratamiento" layoutX="291.0" layoutY="188.0" prefHeight="25.0" prefWidth="234.0" />
+      <TextField fx:id="id" layoutX="14.0" layoutY="242.0" prefHeight="25.0" prefWidth="234.0" />
+      <Text layoutX="14.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
+=======
+      <ImageView fitHeight="153.0" fitWidth="119.0" layoutX="364.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/PerroConsulta.png" />
+         </image>
+      </ImageView>
+>>>>>>> dev_arevalo
    </children>
 </Pane>

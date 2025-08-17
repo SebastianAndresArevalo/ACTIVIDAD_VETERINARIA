@@ -4,11 +4,12 @@ import java.util.ArrayList;
 
 public class Mascota {
 
+    private int id;
     private String nombre;
     private String especie;
     private String raza;
     private byte edad;
-    private ArrayList<Veterinario> listaVeterinarios;
+
 
     public Mascota(String nombre, String especie, String raza, byte edad) {
 
@@ -16,6 +17,7 @@ public class Mascota {
         this.especie = especie;
         this.raza = raza;
         this.edad = edad;
+        this.id = -1;
 
     }
 
@@ -51,13 +53,14 @@ public class Mascota {
         this.edad = edad;
     }
 
-    public ArrayList<Veterinario> getListaVeterinarios() {
-        return listaVeterinarios;
+    public int getId() {
+        return id;
     }
 
-    public void setListaVeterinarios(ArrayList<Veterinario> listaVeterinarios) {
-        this.listaVeterinarios = listaVeterinarios;
+    public void setId(int id) {
+        this.id = id;
     }
+
 
     @Override
     public String toString() {
@@ -66,7 +69,6 @@ public class Mascota {
                 ", especie='" + especie + '\'' +
                 ", raza='" + raza + '\'' +
                 ", edad=" + edad +
-                ", listaVeterinarios=" + listaVeterinarios +
                 '}';
     }
 }

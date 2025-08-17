@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="88.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.DatosGuardadosViewController">
+   <children>
+      <Separator layoutY="44.0" prefHeight="3.0" prefWidth="306.0" />
+      <Text layoutX="47.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATOS GUARDADOS CORRECTAMENTE" />
+      <Button fx:id="regresar" layoutX="117.0" layoutY="53.0" mnemonicParsing="false" onAction="#RegresarInicio" text="REGRESAR" />
+   </children>
+</Pane>

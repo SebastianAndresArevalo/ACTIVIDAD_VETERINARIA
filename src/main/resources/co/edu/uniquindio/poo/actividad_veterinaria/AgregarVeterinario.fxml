@@ -10,14 +10,22 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+=======
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.AgregarVeterinarioViewController">
+>>>>>>> dev_arevalo
    <children>
       <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor introduzca los siguientes datos del veterinario:" underline="true">
          <font>
             <Font name="Times New Roman" size="22.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="14.0" layoutY="115.0" prefHeight="25.0" prefWidth="234.0" />
+=======
+      <TextField fx:id="nombre" layoutX="14.0" layoutY="115.0" prefHeight="25.0" prefWidth="234.0" />
+>>>>>>> dev_arevalo
       <Text layoutX="14.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE:">
          <font>
             <Font name="Times New Roman" size="17.0" />
@@ -28,14 +36,23 @@
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="234.0" />
+=======
+      <TextField fx:id="especialidad" layoutX="14.0" layoutY="188.0" prefHeight="25.0" prefWidth="234.0" />
+>>>>>>> dev_arevalo
       <Text layoutX="17.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NUMERO DE LICENCIA:">
          <font>
             <Font name="Times New Roman" size="17.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <TextField layoutX="14.0" layoutY="260.0" prefHeight="25.0" prefWidth="234.0" />
       <Button layoutX="306.0" layoutY="342.0" mnemonicParsing="false" text="ACEPTAR" />
+=======
+      <TextField fx:id="numerodelicencia" layoutX="14.0" layoutY="260.0" prefHeight="25.0" prefWidth="234.0" />
+      <Button fx:id="aceptar" layoutX="306.0" layoutY="342.0" mnemonicParsing="false" text="ACEPTAR" onAction="#AgregarVeterinario"/>
+>>>>>>> dev_arevalo
       <Text layoutX="412.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recuerde llenar todos los espacios para poder registrar al veterinario" textAlignment="JUSTIFY" wrappingWidth="142.984375">
          <font>
             <Font name="Times New Roman" size="13.0" />
@@ -44,7 +61,11 @@
             <InnerShadow />
          </effect>
       </Text>
+<<<<<<< HEAD
       <Button layoutX="222.0" layoutY="342.0" mnemonicParsing="false" text="REGRESAR" />
+=======
+      <Button fx:id="regresar" layoutX="222.0" layoutY="342.0" mnemonicParsing="false" onAction="#RegresarInicio" text="REGRESAR" />
+>>>>>>> dev_arevalo
       <ImageView fitHeight="196.0" fitWidth="234.0" layoutX="328.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../../images/Veterinario.png" />

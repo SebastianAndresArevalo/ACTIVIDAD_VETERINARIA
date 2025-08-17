@@ -9,19 +9,33 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< HEAD
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Button id="123" layoutX="55.0" layoutY="192.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="190.0" text="Agendar Consulta">
+=======
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffcc56;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.actividad_veterinaria.ViewController.PantallaInicioViewController">
+   <children>
+      <Button fx:id="AgConsultar" layoutX="55.0" layoutY="192.0" mnemonicParsing="false" onAction="#AgendarConsulta" prefHeight="31.0" prefWidth="190.0" text="Agendar Consulta">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Button>
+<<<<<<< HEAD
       <Button id="123" layoutX="55.0" layoutY="275.0" mnemonicParsing="false" text="Consultar citas pendientes">
+=======
+      <Button fx:id="ConsulCitas" layoutX="55.0" layoutY="275.0" mnemonicParsing="false" onAction="#ConsultarCitas" text="Consultar historial clinico">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Button>
+<<<<<<< HEAD
       <Button id="123" layoutX="55.0" layoutY="319.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="190.0" text="Consultar citas asignadas">
+=======
+      <Button fx:id="RegVeterinario" layoutX="55.0" layoutY="319.0" mnemonicParsing="false" onAction="#RegistrarVeterinario" prefHeight="31.0" prefWidth="190.0" text="Registrar Veterinario">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
@@ -36,7 +50,11 @@
             <Font name="Times New Roman" size="18.0" />
          </font>
       </Text>
+<<<<<<< HEAD
       <Button id="123" layoutX="55.0" layoutY="234.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="190.0" text="Consultar historial clinico">
+=======
+      <Button fx:id="CitadelDia" layoutX="55.0" layoutY="234.0" mnemonicParsing="false" onAction="#ConsultarCitasDelDia" prefHeight="31.0" prefWidth="190.0" text="Consultar citas pendientes">
+>>>>>>> dev_arevalo
          <font>
             <Font name="Times New Roman" size="16.0" />
          </font>
